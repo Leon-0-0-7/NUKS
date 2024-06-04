@@ -1,4 +1,3 @@
-# NUKS
 Repo za nuks predmet
 
 # PROJEKT: Bill Management System, se nahaja v mapi project-FINAL:
