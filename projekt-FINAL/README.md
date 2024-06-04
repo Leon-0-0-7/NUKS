@@ -3,10 +3,13 @@
 This is a FastAPI application for managing bills, including features for uploading, viewing, and deleting bills.
 
 ## Project Structure
-project_final/
+
+project-FINAL/
 │
 ├── Dockerfile
 ├── docker-compose.yml
+│
+└── backend/
 ├── main.py
 ├── database.py
 └── requirements.txt
@@ -33,6 +36,5 @@ cd bill_management_system
 docker-compose build
 docker-compose up
 
-3.
-Access the application:
+3. Access the application:
 Open your web browser and navigate to http://212.101.137.103:8000/
