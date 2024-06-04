@@ -1,7 +1,7 @@
 # NUKS
 Repo za nuks predmet
 
-# PROJEKT: Bill Management System SE NAHAJA V MAPI project-FINAL:
+# PROJEKT: Bill Management System, se nahaja v mapi project-FINAL:
 This is a FastAPI application for managing bills, including features for uploading, viewing, and deleting bills.
 
 Project Structure
