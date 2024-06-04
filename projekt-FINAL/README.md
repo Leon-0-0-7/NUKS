@@ -6,9 +6,9 @@ This is a FastAPI application for managing bills, including features for uploadi
 
 project-FINAL/
 
-│
-├── Dockerfile
-├── docker-compose.yml
+
+── Dockerfile
+── docker-compose.yml
 
 
 │
@@ -33,7 +33,8 @@ project-FINAL/
 
 1. Clone the repository:
 
-git clone 
+git clone  https://github.com/Leon-0-0-7/NUKS.git
+
 cd NUKS/poject-FINAL
 
 
