@@ -5,14 +5,19 @@ This is a FastAPI application for managing bills, including features for uploadi
 ## Project Structure
 
 project-FINAL/
+
 │
 ├── Dockerfile
 ├── docker-compose.yml
+
+
 │
 └── backend/
 ├── main.py
 ├── database.py
 └── requirements.txt
+
+
 │
 └── frontend/
 ├── index.html
@@ -28,8 +33,8 @@ project-FINAL/
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/bill_management_system.git
-cd bill_management_system
+git clone 
+cd NUKS/poject-FINAL
 
 
 2. build and run docker
