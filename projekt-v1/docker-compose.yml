@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: my-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: receipts_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./fastapi-app
+    container_name: my-fastapi-app
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/receipts_db
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/files:/app/files
+      
+  frontend:
+    build: ./frontend
+    container_name: my-html-app
+    ports:
+      - "5080:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

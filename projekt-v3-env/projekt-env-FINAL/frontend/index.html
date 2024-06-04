@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipts</title>
+    <link rel="stylesheet" href="frontend/styles.css">
+</head>
+<body>
+    <h1>Receipts</h1>
+    <form id="receipt-form">
+        <div class="form-left">
+            <input type="text" id="description" placeholder="Description" required />
+            <input type="text" id="category" placeholder="Category" required /> <!-- Category input field -->
+            <div class="date-field">
+                <label for="purchase-date">Purchase Date:</label>
+                <input type="date" id="purchase-date" required />
+            </div>
+            <div class="date-field">
+                <label for="entry-date">Entry Date:</label>
+                <input type="date" id="entry-date" required />
+            </div>
+        </div>
+        <div class="form-right">
+            <input type="file" id="file" required />
+            <button type="button" onclick="uploadFile()">Submit</button>
+        </div>
+    </form>
+
+
+
+    <table id="receipts-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Purchase Date</th>
+                <th>Entry Date</th>
+            </tr>
+        </thead>
+        <tbody id="receipts-list">
+            <!-- Receipts will be appended here -->
+        </tbody>
+    </table>
+    
+    <div class="delete-button-container">
+        <button id="delete-all" class="delete-button">Delete All Receipts</button>
+    </div>
+    <script src="frontend/scripts.js"></script>
+</body>
+</html>

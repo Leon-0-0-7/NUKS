@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Receipts</h1>
+    <form id="receipt-form">
+        <div class="form-left">
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="text" id="category" placeholder="Category" required />
+            <div class="date-field">
+                <label for="purchase-date">Purchase Date:</label>
+                <input type="date" id="purchase-date" required />
+            </div>
+            <div class="date-field">
+                <label for="entry-date">Entry Date:</label>
+                <input type="date" id="entry-date" required />
+            </div>
+        </div>
+        <div class="form-right">
+            <input type="file" id="image" required />
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <button id="delete-all" class="delete-button">Delete All Receipts</button>
+
+    <table id="receipts-table">
+        <thead>
+            <tr>
+                <th>Image URL</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Purchase Date</th>
+                <th>Entry Date</th>
+            </tr>
+        </thead>
+        <tbody id="receipts-list">
+            <!-- Receipts will be appended here -->
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    max-width: 1000px; /* Increase the max-width for a wider table */
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-left,
+.form-right {
+    width: 48%;
+}
+
+.form-left input,
+.form-right input,
+form button,
+.form-left label {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.date-field {
+    display: flex;
+    align-items: center;
+}
+
+.date-field label {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.date-field input {
+    width: 70%;
+    margin: 0;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.delete-button:hover {
+    background-color: #FF4500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-spacing: 0px 10px; /* Add space between columns (0px horizontal, 10px vertical) */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px; /* Maintain padding within cells */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100px;
+    display: block;
+}
