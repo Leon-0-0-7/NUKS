@@ -4,7 +4,7 @@ Repo za nuks predmet
 This is a FastAPI application for managing bills, including features for uploading, viewing, and deleting bills.
 
 ## Project Structure
-project-FINAL/
+projekt-FINAL/
 
 ── Dockerfile
 
