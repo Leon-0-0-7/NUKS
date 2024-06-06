@@ -1,6 +1,6 @@
 Repo za nuks predmet
 
-# PROJEKT: Bill Management System, se nahaja v mapi project-FINAL:
+# PROJEKT: Bill Management System, se nahaja v mapi projekt-FINAL:
 This is a FastAPI application for managing bills, including features for uploading, viewing, and deleting bills.
 
 ## Project Structure
@@ -22,7 +22,7 @@ Docker Compose
 Clone the repository:
 git clone https://github.com/Leon-0-0-7/NUKS.git
 
-cd NUKS/poject-FINAL
+cd NUKS/pojekt-FINAL
 
 build and run docker docker-compose build docker-compose up
 
